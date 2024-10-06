@@ -61,7 +61,7 @@ p, a, li {
 	font-family: "Raleway", sans-serif;
 }
 .banner {
-    background-image: url("img/banner.png");
+    background-image: url("../img/banner.png");
     height: 750px;
     background-size: cover; /* Ensures the image covers the entire area */
     background-position: center; /* Centers the image in the banner */
