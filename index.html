@@ -15,15 +15,43 @@
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <nav class="navbar navbar-expand-sm fixed-top navbar-light "> <!-- Added bg-transparent class -->
+            <div class="container">
+                <a class="navbar-brand" href="#">PV</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item px-2">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">Projects</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#">About Me</a>
+                        </li>
+                    </ul>
+                    <!-- Add Get in Touch button at the right corner -->
+                    <a href="#" class="btn btn-primary">Get in Touch</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
     <section class="banner" id="inner-banner">
-        <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="container d-flex justify-content-center align-items-center">
             <div class="row w-100">
-                <div class="col-5 d-flex flex-column justify-content-center">
+                <div class="col-md-5 col-12  d-flex flex-column justify-content-center">
                     <h6 class="pb-3">Hi, I am</h6>
                     <h2>Prerna <br/><span class="ps-5">Vispute</span></h2>
+                    <h5>From concepts to clicks, I thrive on crafting designs that create meaningful connections with users.</h5>
+                    <a href="#" class="btn btn-primary">Browse Projects </a>
                 </div>
-                <div class="col-7 d-flex justify-content-center">
-                    <img src="assets/img/banner-image.png" height="700" width="700" alt="Banner Image">
+                <div class="col-md-7 col-12 d-flex justify-content-center">
+                    <img src="assets/img/banner-image.png" alt="Banner Image" class="img-fluid">
                 </div>
             </div>
         </div>
