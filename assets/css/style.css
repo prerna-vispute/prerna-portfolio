@@ -1,105 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 /* ============== Resetting default browser styles  ================ */
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html, body {
-	height: 100%;
-	font-size: 18px;
+    height: 100%;
+    font-size: 18px;
 }
+
 /* ============== Basic typography styles ================ */
 body {
-	font-size: 1.125rem;
-	font-family: "Poppins", sans-serif;
-	color: #ffffff;
-	font-weight: 400;
-	font-style: normal;
-	line-height: 1.875rem;
+    font-size: 1.125rem;
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.875rem;
 }
 
 h1, .h1 {
-	font-size: 60px;
-	font-family: "Chakra Petch", sans-serif;
-/*	line-height: 100px;*/
-	font-weight:bold;
+    font-size: 60px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: bold;
 }
 
 h2, .h2 {
-	font-size: 100px;
-	font-family: "Chakra Petch", sans-serif;
-	font-weight: 600;
-	line-height: 100px;
+    font-size: 100px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    line-height: 100px;
 }
 
 h3, .h3 {
-	font-size: 36px;
-	font-family: "Open Sans", sans-serif;
-	line-height: 35.16px;
+    font-size: 30px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 35.16px;
 }
 
 h4, .h4 {
-	font-size: 26px;
-	font-family: "Open Sans", sans-serif;
-	
+    font-size: 26px;
+    font-family: "Open Sans", sans-serif;
 }
 
 h5 {
-	font-size: 20px;
-	font-family: "Poppins", sans-serif;
-	font-weight: 400;
-	line-height: 35px;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    line-height: 35px;
 }
+
 h6 {
-	font-size: 20px;
-	font-family: "Poppins", sans-serif;
-
-	
-}
-@media(max-width: 992px){
-
-	h2, .h2 {
-		font-size: 60px;
-	
-		line-height: 60px;
-	}
-	h5 {
-		font-size: 16px;
-		
-		line-height: 25px;
-		
-	}
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
 }
 
 p, a, li {
-	font-size: 16px;
-	font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
 }
-.text-black{
-	color: #000 !important;
+
+.text-black {
+    color: #000 !important;
 }
+.text-purple{
+	color: #763CAC !important;
+}
+/* ============== Banner styling ================ */
 .banner {
     background-image: url("../img/banner.png");
     background-size: cover; /* Ensures the image covers the entire area */
     background-position: center; /* Centers the image in the banner */
     background-repeat: no-repeat; /* Prevents the image from repeating */
 }
-@media(max-width: 992px){
-	.content-setion{
-		padding-top: 50px;
-	}
-	.banner{
-		padding-top: 30px;
-		padding-bottom: 50px;
-	}
-	.nav-link{
-		color: #000 !important;
-	}
-}
+
+/* ============== Button styling ================ */
 .btn-primary {
     background-color: #763CAC !important;
     font-size: 15px;
@@ -110,30 +90,110 @@ p, a, li {
     text-align: center;
     text-decoration: none;
     align-self: self-start; /* Prevents it from stretching in flexbox */
-	border: 0px;
+    border: 0;
 }
-@media (max-width: 992px){
-	.btn-primary {
-		align-self: center; /* Prevents it from stretching in flexbox */
-		border: 0px;
-	}
+
+@media (max-width: 992px) {
+    .btn-primary {
+        align-self: center;
+        border: 0;
+    }
 }
-.navbar-brand{
-	font-family: "Anton", sans-serif;
-	font-weight: 400;
-	font-size: 40px;
-	color: #fff;
+
+/* ============== Navbar and offcanvas styling ================ */
+.navbar-brand {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: #fff;
 }
-.nav-link{
-	color: #fff;
+
+.nav-link {
+    color: #fff;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
 }
+
 /* Scrolled state: blue navbar */
 .navbar.scrolled {
     background-color: blue; /* Change to blue on scroll */
 }
-.navbar-toggler{
-	padding: 3px;
+
+.navbar-toggler {
+    padding: 3px;
 }
-.navbar-toggler:focus{
-	box-shadow: none;
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.offcanvas-header {
+    justify-content: unset;
+}
+
+.off-foot {
+    font-size: 12px;
+    line-height: 15px;
+}
+
+/* ============== Media Queries ================ */
+@media (max-width: 992px) {
+    h2, .h2 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+
+    h5 {
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .content-setion {
+        padding-top: 60px;
+    }
+
+    .banner {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    .nav-link {
+        color: #000 !important;
+    }
+}
+/* ===========about-us============ */
+#about-us{
+	background-color: #171717;
+}
+#tools-summary{
+	background-color: #11071F;
+}
+
+p span.typed-text {
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 90px;
+    font-family: "Poppins", sans-serif;
+}
+
+p span.cursor {
+    display: inline-block;
+    background-color: #ccc;
+    margin-left: 0.1rem;
+    width: 3.5px;
+    height: 5.2em; /* Height of the cursor */
+    vertical-align: bottom; /* Align cursor with the text */
+    animation: blink 1s infinite;
+}
+
+p span.cursor.typing {
+    animation: none;
+}
+
+@keyframes blink {
+    0%  { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100%  { background-color: #ccc; }
 }

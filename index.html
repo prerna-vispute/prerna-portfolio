@@ -17,7 +17,7 @@
     <header id="header" >
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-2 ">
             <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler me-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <!-- Replace the default icon with a custom SVG icon -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M2.5 12.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-4a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm0-4a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11z"/>
@@ -28,41 +28,48 @@
                 
                 <div class="offcanvas offcanvas-start my-custom-offcanvas" id="navbarTogglerDemo02" data-bs-backdrop="static" tabindex="-1">
                     <div class="offcanvas-header pb-0">
-                        <a class="navbar-brand text-black" href="#">PV</a>
                         <button type="button" class="btn-close btn-close-custom" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        <a class="navbar-brand text-black ms-3" href="#">PV</a> 
                     </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav mx-auto">
                             <li class="nav-item">
-                                <a class="nav-link text-uppercase" href="default.aspx">Home</a>
+                                <a class="nav-link pe-4 ps-md-5 ps-4" href="default.aspx">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-uppercase" href="products.aspx">Products</a>
+                                <a class="nav-link  px-4" href="products.aspx">Projects</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-uppercase" href="certificates.aspx">Certificates</a>
+                                <a class="nav-link  ps-4" href="certificates.aspx">About Me</a>
                             </li>
-                           
                         </ul>
-                        
+                        <!-- These elements will only be visible on small screens -->
+                        <div class="d-lg-none">
+                            <a class="btn btn-primary mt-1 ms-3" href="#">Get In Touch</a>
+                            <p class="small text-muted mb-0 off-foot pt-3 ps-4">Designed by Prerna<br/> Developed by Shraddha</p>
+                        </div>
                     </div>
                 </div>
-                <a class="btn btn-primary mt-1" href="#">Get In Touch</a>
+        
+                <!-- This button is visible on all screens -->
+                <a class="btn btn-primary mt-1 ms-3" href="#">Get In Touch</a>
             </div>
         </nav>
     </header>
     
     
+    
+    
     <section class="banner" id="inner-banner" >
-        <div class="container d-flex justify-content-center align-items-center py-xl-0 py-lg-5">
+        <div class="container d-flex justify-content-center align-items-center py-xl-0 py-lg-5 ">
             <div class="row w-100">
-                <div class="col-md-5 col-12  d-flex flex-column justify-content-center content-setion text-md-start text-center">
+                <div class="col-md-5 col-12 d-flex flex-column justify-content-center content-setion text-md-start text-center">
                     <h6 class="pb-0 fw-normal">Hi, I am</h6>
                     <h2>Prerna <br/><span class="ps-md-5 ps-0">Vispute</span></h2>
-                    <h5 class="pt-3" >From concepts to clicks, I thrive on crafting designs that create meaningful connections with users.</h5>
-                    <a href="#" class="btn btn-primary">Browse Projects </a>
+                    <h5 class="py-3" >From concepts to clicks, I thrive on crafting designs that create meaningful connections with users.</h5>
+                    <a href="#" class="btn btn-primary ">Browse Projects </a>
                 </div>
-                <div class="col-md-7 col-12 d-flex justify-content-center">
+                <div class="col-md-7 col-12 d-flex justify-content-center pt-5">
                     <!-- Image for medium screens and larger -->
                     <img src="assets/img/banner-prerna.png" alt="Banner Image" class="img-fluid d-none d-md-block">
                     <!-- Image for smaller screens -->
@@ -74,11 +81,39 @@
         
     </section>
     <section id="about-us">
-        <div class="container" style="min-height: 200px;">
-            
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-12">
+                    <h1 class="text-purple fw-semibold py-1">About me</h1>
+                    <p class="py-2">I’m a self-taught UX/UI Designer with a knack for crafting clever solutions. From engineering to
+                        enchanting user experiences, my background gives me a unique edge in designing with precision and
+                        creativity. Growing up with a sketchbook always in hand, I’ve turned my love for creativity into
+                        specializing in UI/UX. I thrive on solving design challenges with a playful twist, always aiming to
+                        craft experiences that both delight and engage</p>
+                    <a href="#" class="btn btn-primary">View Resume</a>
+                </div>
+                <div class="col-md-6 col-12 pt-5 pt-md-0">
+                    <img src="assets/img/about-us-illustrator.png" alt="Banner Image" class="img-fluid">
+                </div>
+            </div>
         </div>
     </section>
+<section id="tools-summary">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h3 class="text-purple fw-semibold">Tools That Fuel My Creativity</h3>
+            </div>
+        </div>
+        <div class="row pt-2">
+            <div class="col-12 text-center py-5">
+                <p> <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+            </div>
+        </div>
 
+    </div>
+   
+</section>
     <script src="assets/js/jquery.min.js"></script>
 	<script src="assets/bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
 	<script src="assets/js/swiper-bundle.min.js"></script>
@@ -99,5 +134,49 @@
 
 
         </script>
+       
+       <script>
+      const typedTextSpan = document.querySelector(".typed-text");
+const cursorSpan = document.querySelector(".cursor");
+
+const textArray = ["hard", "fun", "journey", "LIFE"];
+const typingDelay = 200;
+const erasingDelay = 100;
+const newTextDelay = 2000; // Delay between current and next text
+let textArrayIndex = 0;
+let charIndex = 0;
+
+function type() {
+  if (charIndex < textArray[textArrayIndex].length) {
+    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(type, typingDelay);
+  } 
+  else {
+    cursorSpan.classList.remove("typing");
+  	setTimeout(erase, newTextDelay);
+  }
+}
+
+function erase() {
+	if (charIndex > 0) {
+    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+    charIndex--;
+    setTimeout(erase, erasingDelay);
+  } 
+  else {
+    cursorSpan.classList.remove("typing");
+    textArrayIndex++;
+    if(textArrayIndex>=textArray.length) textArrayIndex=0;
+    setTimeout(type, typingDelay + 1100);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+  if(textArray.length) setTimeout(type, newTextDelay + 250);
+});
+     </script>
 </body>
 </html>
